@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"
+        <title>Google Search</title>
+        <link rel="icon" href="https://icons.iconarchive.com/icons/google/chrome/24/Google-Chrome-icon.png">
+    </head>
+
+    <body>
+
+            <h1>Search on Google (A-Za-z)</h1>
+            <img src="https://icons.iconarchive.com/icons/google/chrome/64/Google-Chrome-icon.png">
+
+        <form action="https://www.google.com/search">
+            <input pattern="[A-Za-z]{3}" type="text" size="60" name="q">
+            <button>Search!</button>
+        </form>
+
+            <h1>Search on Yandex (0-9+)</h1> <br>
+            <img src="https://icons.iconarchive.com/icons/sicons/basic-round-social/48/yandex-icon.png">
+
+        <form action="https://yandex.com/search">
+            <input pattern="[0-9]+" type="text" size="60" name="w">
+            <button>Search!</button>
+        </form>
+
+        <h1>Search on Youtube</h1> <br>
+            <img src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/48/Youtube-icon.png">
+            
+        <form action="https://www.youtube.com/results">
+            <input type="text" size="60" name="e">
+            <button>Search!</button>
+        </form>
+
+        <h1>Search(Radio)</h1>
+        <fieldset>
+            <form action="https://www.google.com/search">
+                <input type="radio" value="HTML" name="q"> HTML
+                <input type="radio" value="CSS" name="q"> CSS
+                <button>Search!</button>
+            </form>
+        </fieldset>
+
+        <h1>Search(Textarea)</h1>
+            <form action="https://www.google.com/search">
+                <textarea required minlength="1" name="q" cols="30" rows="5"></textarea>
+                <button>Search!</button>
+            </form>
+
+
+    </body>
+
+</html>
