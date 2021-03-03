@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+
+        body {background-color: #456;font-family: helvetica;margin: 0;}
+            .menu {background-color: #234;margin-left: -400px;width: 500px; transition: 0.7s;}
+            .menu:target {margin: 0;}
+                .menu-title {margin: 0;color: white;padding: 10px;}
+                    .menu-list {list-style: none;margin: 0;padding: 0;}
+                        li {}
+                            li:first-child {border-top: 1px solid #345;}
+                        a {border-bottom: 1px solid #345; padding: 5px 10px; display: block; text-decoration: none; color: #ddd;}
+                            a:hover {color: white; background-color: #345;}
+                            a::before {content: "✔";color: green;}
+                            .not-available::before {content: "✕";color: red;}
+                .toggler {background-color: brown;width: 60px;height: 60px;text-align: center;padding: 0;line-height: 60px;border-radius: 30px; margin-left: 15px;transform: translateX(400px) translateY(-113px);}
+                    .toggler::before {content: none;}            
+                            
+    </style>
+</head>
+<body>
+
+    <nav class="menu" id="navbar">
+        <h2 class="menu-title">Our Cuisine</h2>
+            <ul class="menu-list">
+                <li><a href="#">Salad</a></li>
+                <li><a href="#">Soup</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a  class="not-available" href="#">Kebab</a></li>
+                <li><a href="#">Burger</a></li>
+            </ul>
+            <a class="toggler" href="#navbar">MENU</a>
+    </nav>
+
+</body>
+</html>
