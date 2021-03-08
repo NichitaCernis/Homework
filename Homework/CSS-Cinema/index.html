@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+
+    <style>
+        body {background-color: #333;color: white;}
+        .cinema {border: 1px solid red;padding: 5px; text-align: center;}
+            .cinema .vip span {background-image:url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Sphere-Seat-icon.png) ; display: inline-block; width: 64px; height: 64px; vertical-align: top;} 
+            .cinema .mid span {background-image:url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Magenta-Seat-icon.png) ; display: inline-block; width: 64px; height: 64px;vertical-align: top;}
+                .g {opacity: 0;}
+                .five {display: inline-block; width: 64px; height: 64px; vertical-align: top;}
+                 /*   .five ::after {break-inside: ;}  */
+                    .five :hover {opacity: 0.75; transition: 0.75; background-color: red;}
+            .cinema .front span {background-image:url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Magenta-Seat-icon.png) ; display: inline-block; width: 64px; height: 64px;}         
+    </style>
+<!--https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Sphere-Seat-icon.png VIP
+https://icons.iconarchive.com/icons/archigraphs/modern-chairs/64/Magenta-Seat-icon.png None VIP
+https://icons.iconarchive.com/icons/icons-land/vista-people/32/Office-Customer-Female-Light-icon.png Woman
+https://icons.iconarchive.com/icons/icons-land/vista-people/32/Person-Male-Light-icon.png Male-->
+
+</head>
+<body>
+    
+    <h1>Advanced Selctors | Cinema</h1>
+    <div class="cinema">
+
+        <div class="vip">   
+            <h1>VIP</h1>
+
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+                <div class="five"><span>7<br><img src="https://icons.iconarchive.com/icons/icons-land/vista-people/32/Person-Male-Light-icon.png"></span></div></div></div>
+
+        <div class="mid">
+            <h1>Main</h1>  
+
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span class="g">G</span><span>5</span><span>6</span><span>7</span><span>8</span></div> 
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span class="g">G</span><span>5</span><span>6</span><span>7</span><span>8</span></div>              
+                <div class="row">
+                    <div class="five"><span>1<br><img src="https://icons.iconarchive.com/icons/icons-land/vista-people/32/Person-Male-Light-icon.png"></span></div>
+                    <div class="five"><span>2<br><img src="https://icons.iconarchive.com/icons/icons-land/vista-people/32/Office-Customer-Female-Light-icon.png"></span></div><span>3</span><span>4</span><span class="g">G</span>
+                    <div class="five"><span>5 <br><img src="https://icons.iconarchive.com/icons/icons-land/vista-people/32/Person-Male-Light-icon.png"></span></div><span>6</span><span>7</span><span>8</span></div> 
+        </div>
+
+        <div class="front">
+            <h1>Front</h1>
+
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+                <div class="row"><span>1</span><span>2</span><div class="five"><span>3<br><img src="https://icons.iconarchive.com/icons/icons-land/vista-people/32/Person-Male-Light-icon.png"></span></div><span>4</span><span>5</span></div>
+        </div>
+    </div>
+        
+
+</body>
+</html>
