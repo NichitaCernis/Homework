@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+
+            body 
+            {background-color: #333;}
+
+            .dropdown
+            {width: 140px;height: 30px; text-align: center; background-color: rgb(104, 54, 105);color:white; padding-top: 10px; border-radius: 7px; box-shadow: 1px 1px rgb(0, 0, 0); }
+    
+            .dropdown ul>div:hover
+            {opacity: 0.55; transition: 0.2s; box-shadow: 0px -1px 1px 0px rgb(0, 0, 0);}
+
+            .dropdown ul>div
+            {background-color: rgb(133, 71, 134)}
+
+            .list
+            {list-style: none; background-color: rgb(157, 84, 158);padding-left: 20px;padding-right: 7px; padding-top:0px;padding-bottom: 0px ; margin-top: 10px; text-align: left; height: 55px;width: 100px; transform: translateX(7px) translateY(1.5px);}
+
+            .list div a
+            {text-decoration: none; color:white;}
+            
+            .o {background-color: rgb(133, 71, 134); padding-left: 20px; transform: translateX(-20px); width: 107px; box-shadow: 0px -0.75px 0px 0px rgb(0, 0, 0);}
+
+            .t {background-color: rgb(133, 71, 134); padding-left: 20px; transform: translateX(-20px);width: 107px; box-shadow: 0px -1px 0px 0px rgb(36, 36, 36);}
+
+            .tre {background-color: rgb(133, 71, 134); padding-left: 20px; transform: translateX(-20px);width: 107px; box-shadow: 0px -1px 0px 0px rgb(36, 36, 36);}
+
+
+            /*---------------*/
+            .dropdown .list 
+            {display: none;}
+
+            .dropdown label 
+            {user-select: none;}
+
+            .dropdown input
+            {display: none;}
+
+            .dropdown input:checked + label + .list
+            {display: block;}
+
+            .dropdown input:checked + label::after 
+            {content: "△";}
+
+            .dropdown label::after 
+            {content: "▽"; margin-left: 20px;}
+        </style>
+    </head>
+    <body>
+
+        <nav class="dropdown">
+            <input id="Toggler" type="checkbox">
+            <label for="Toggler">Dropdown </label>
+            
+            <ul class="list">
+                <div class="o"><a href="">Item 1</a></div>
+                <div class="t"><a href="">Item 2</a></div>
+                <div class="tre"><a href="">Item 3</a></div>
+            </ul>
+        </nav>
+
+    </body>
+</html>
