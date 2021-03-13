@@ -1,0 +1,22 @@
+body
+{background-color: #333;}
+
+.preloader
+{/*border: dotted 1px red*/; width: 200px; height: 200px; }
+
+.preloader .lg
+{border: 10px solid orangered; width: inherit; height: inherit; border-radius: 105px; border-top-color: transparent; border-bottom-color: transparent;
+box-sizing: border-box;
+animation: rot 5s infinite linear;}
+
+/*How much lg offset?: 
+6px on right and bottom = border: 1px Dottet + border: 5px solid */
+
+.preloader .lg .sm
+{border: orange 7px solid; width: 160px; height: 160px; border-radius: 90px; border-right-color: transparent; border-left-color:transparent ; transform: translateX(2.5px) translateY(3px);}
+
+@keyframes rot
+{
+    from {transform: rotate(0deg);} 
+    to   {transform: rotate(-360deg);}
+}
