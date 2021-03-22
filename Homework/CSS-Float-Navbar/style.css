@@ -1,0 +1,42 @@
+body,ul 
+{margin: 0;padding: 0;font-family: sans-serif; font-size: 18px;line-height: 20px}
+
+ul
+{list-style: none}
+
+a
+{text-decoration: none; color: #fff}
+
+/*Styling*/
+body 
+{background-color: #222}
+
+#navbar 
+{background-color: #556; padding: 0 2.6%;display: inline-block; width: 95%; height: 100%;}
+
+#navbar ul
+{/*border: 1px red solid;*/}
+
+#navbar li
+{float: left}
+
+#navbar li a
+{color: white; padding: 37px 20px; display: block}
+
+#navbar .nav-brand
+{float: left}
+
+#navbar .nav-brand .image
+{padding: 9px;}
+
+#navbar .nav-main
+{float: right; margin-right: 11%}
+
+#navar .nav-main .phone
+{font-weight: bold; padding: 37px 48px;}
+
+#navbar .nav-user
+{float: right;}
+
+/*#navbar .clear 
+{clear: both} <div class="clear"></div>
