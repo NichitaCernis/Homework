@@ -1,0 +1,41 @@
+body,ul 
+{margin: 0;padding: 0;font-family: sans-serif; font-size: 18px;line-height: 20px}
+
+ul
+{list-style: none}
+
+a
+{text-decoration: none; color: #fff}
+
+/*Styling*/
+body 
+{background-color: #222}
+
+#navbar 
+{background-color: #556; padding: 0 2.6%;width: 100%;
+display: table; box-sizing: border-box;}
+
+#navbar ul
+{display: table-cell;vertical-align: middle;}
+
+#navbar li
+{display: table-cell;vertical-align: middle;}
+
+#navbar li a
+{color: white; padding: 37px 18px; display: block;}
+
+#navbar .nav-brand
+{}
+
+#navbar .nav-brand .image
+{padding: 9px;}
+
+#navbar .nav-main
+{}
+
+#navbar .nav-main .phone
+{font-weight: bold; padding: 37px 48px;}
+
+#navbar .nav-user
+{min-width: 11%;}
+
