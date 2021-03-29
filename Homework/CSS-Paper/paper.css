@@ -1,0 +1,97 @@
+/*https://i.picsum.photos/id/1053/700/700.jpg?hmac=bzkbZucOM2-F6lnXUIx9ygLveHCY-VVF1K6BDUNPiUI*/
+
+body{
+    background-color: #555;
+    color: white;
+
+}
+
+#paper{
+    /*border: solid 3px red;*/
+    width: 700px;
+    height: 700px;
+    margin: 30px auto;
+
+}
+
+#paper .clear{
+    clear: both;
+
+}
+
+#paper .img{
+    border: 20px solid white;
+    width: 700px;
+    height: 700px;
+
+    box-sizing: border-box;
+
+    background-image: url(https://i.picsum.photos/id/1053/700/700.jpg?hmac=bzkbZucOM2-F6lnXUIx9ygLveHCY-VVF1K6BDUNPiUI);
+}
+
+#paper .img .gradient{
+    height: 660px;
+        background-image: linear-gradient(
+            90deg,
+            #0001,#ffff,#0001
+        );
+}
+    #paper .img:hover{
+        background-image: url(https://i.picsum.photos/id/178/700/700.jpg?hmac=19wleSV-nUHG6UO_1g1-dwuKbDrQ1EV4J5HIeApkon8); transition: 0.75s;
+    }
+        #paper .img .gradient:hover{
+            transition: 0.75s;
+            height: 660px;
+                background-image: linear-gradient(
+                    45deg,
+                    rgb(201, 248, 250),#0001,rgb(201, 248, 250)
+                );
+        }
+
+#paper .t-l,
+#paper .t-r,
+#paper .b-l,
+#paper .b-r{
+    /*border: 2px solid orange;*/
+    width: 350px;display: inline-block;
+    height: 20px;
+    box-sizing: border-box;
+        float: left;
+}
+
+#paper .t-l{
+    box-shadow: 7px -30px 10px 5px black;
+    /*           X    Y                  */
+    transform: rotate(2deg) translateY(30px);
+
+    position: relative;
+        z-index: -1;
+}
+
+#paper .t-r{
+    box-shadow: -7px -30px 10px 5px black;
+    /*           X    Y                  */
+    transform: rotate(-2deg) translateY(30px);
+
+    position: relative;
+        z-index: -1;
+}
+
+#paper .b-l{
+    box-shadow: 7px -36px 10px 5px black;
+    /*           X    Y                  */
+    transform: rotate(-2deg) translateY(30px);
+
+    position: relative;
+        z-index: -1;
+}
+
+#paper .b-r{
+    box-shadow: -7px -36px 10px 5px black;
+    /*           X    Y                  */
+    transform: rotate(2deg) translateY(30px);
+
+    position: relative;
+        z-index: -1;
+}
+
