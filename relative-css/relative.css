@@ -1,0 +1,39 @@
+body {
+background-color: #333;
+color: white;
+}
+
+.parent {
+border: 5px solid black;
+padding: 5px;
+margin: 20px;
+width: 350px;
+    height: 200px;
+}
+
+.parent > div {
+    width: 100px;
+    height: 100px;  
+    display: inline-block;
+}
+
+.parent .d-1 {
+    background-color: brown;
+    position: relative;
+}
+
+.parent .d-2 {
+    background-color: darkorange;
+
+    position: relative;
+    bottom: -50px; left: -50px;
+    z-index: -1;
+}
+
+.parent .d-3 {
+    background-color: gray;
+    position: relative;
+    bottom: -100px;left: -100px;
+    z-index: -2;
+}
+
