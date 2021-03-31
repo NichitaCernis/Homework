@@ -1,0 +1,38 @@
+body {
+    background-color: #333;
+    color: white;
+
+    height: 2000px;
+    }
+    
+    .parent {
+    border: 5px solid black;
+    padding: 5px;
+    margin: 20px;
+    
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+
+    }
+    
+    .parent .child-1 {
+        background-color: orange;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+
+        
+    }
+    .parent .child-2 {
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+
+        position: absolute;
+        bottom: -105px;
+        right: -105px;
+    }
+    /*HM 2: Because of Border:5px it's inside the Border, add+5px*/
+    
