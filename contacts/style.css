@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background-color: #222;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#contacts{
+    
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    overflow: hidden;
+/*
+HM1: How big is the distance if Font-size here?
+    Its 3* the Font-size or 3 times the Icons
+HM2: em vs rem 
+1em = Font-size of the Element|1rem = Font-size of Root Element
+*/
+}
+
+#contacts ul{
+    font-size: 3em;
+    margin-bottom: -10em;
+    
+    transition: 1s;
+}
+
+#contacts:target ul{
+    margin-bottom: 0;
+}
+
+#contacts ul a{
+    padding: 1em;
+    display: block;
+    background-color: orange;
+    margin-bottom: 0.25em;
+    border-radius: 1.5em;
+}
+
+
+#contacts ul li:last-child a{
+    margin-bottom: 0;
+}
+
+
+
