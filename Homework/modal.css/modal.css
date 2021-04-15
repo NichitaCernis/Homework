@@ -109,45 +109,60 @@ a{
                 opacity: 1;
             }
 }
-
+/*Register Form*/
 .window .form{
     margin-left: 2em;
-    height: 700px;
-    width: 900px;
+    
     transform: translateX(250px) translateY(150px);
 }
-.window legend{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 0.5em 1em;
-    transform: translateX(-5px);
-}
-.window .register{
-    border: .2em solid #3339;
-    background-color: rgb(221, 221, 221);
-    margin: 1em;
-    font-size: 1.5em;
-}
-/*Username  : <input required type="text"/>*/
-.margin{
-    margin: 1em;
-    margin-bottom: 2em;
-}
+    .window legend{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 0.5em 1em;
+        padding-top: 0.2em;
+        transform: translateX(-5px);
+    }
+        .window .register{
+        /* border: .2em solid #3339;*/
+            background-color: rgba(221, 221, 221, 0.301);
+            
+            font-size: 1.5em;
+            height: 20em;
+            width: 55%;
+        }
+        
+            .margin{
+                margin: 1em;
+                margin-bottom: 2em;
+            }
 
-.window .textfield{
-    background-color: #fff;
-    display: inline block;
-    border: 0.2em #3339 solid;
-    height: 20em;
-    width: 20em;
-    transform: translateX(325px) translateY(-370px);
-}
+                .window .textfield{
+                    
+                    display: inline block;
+                    /*border: 0.2em #3339 solid;*/
+                    height: 20em;
+                    width: 20%;
+                    transform: translateX(325px) translateY(-470px);
+                }
 
-.window input{
-    border: 1px solid black;
-    box-shadow: 0 0 1em 0.2em #3339;
-    margin-top: 1em;
-    width: 90%;
-    height: 10%;
-    transform: translateY(20px);
-}
+                    .window input{
+                        border: 2px solid gray;
+                        box-shadow: 0 0 1em 0.2em #3339;
+                        margin-top: 1em;
+                        width: 90%;
+                        height: 10%;
+                        transform: translateY(20px);
+                    }
+
+                        .window .btn{
+                            border: 1px black solid;
+                            font-size: 1.5em;
+                            margin-left: .7em;
+                            padding: .5em;
+                            height: 7%;
+                            width: 3.4em;
+                            text-decoration: none;
+                            background-color: orangered;
+                            border-radius: 15px;
+                            color: white;
+                        }
