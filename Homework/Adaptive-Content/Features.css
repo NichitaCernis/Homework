@@ -1,0 +1,107 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color:white;
+    margin: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+h1,h2,h3,p{
+    margin: 0 0 .75em 0;
+}
+figure,ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+    .features{
+        background-color: rgb(247,247,247);
+        margin: 30em 0;
+        padding: 4em 0;
+        border: 1px solid lightgray;
+    }
+
+        .features header{
+            text-align: center;
+            padding: 2em 0;
+        }
+
+            .features header h2{
+                font-size: 1em;
+                font-weight: 400;
+                color: gray;
+            }
+
+                .features .row{
+                    padding: 2em 0;
+                }
+
+                    .features .row > *{
+                        width: 33.33%;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                        .features .row figure{
+                            padding: 0 3%;
+                        }
+
+                            .features .row ul:first-child{
+                                padding: 0 5% 0 2.5%;
+                                text-align: right;
+                            }
+
+                                .features .row ul:last-child{
+                                    padding: 0 2.5% 0 5;
+                                    
+                                }
+
+                                    .features .row ul li{
+                                        padding: 1.25em 1.25%;
+                                    }
+                                    .features .row li{
+                                        width: 20em;
+                                    }
+                                    
+                                    .features .row li h3{ 
+                                        padding-right: 1em;
+                                    }
+                                        .features .row1 li p{
+                                            padding: 1em 1em;
+                                            border-top: 2px solid lightgray;
+                                            border-left: 2px solid lightgray;
+                                            color: gray; 
+                                        }
+                                        .features .row2 li p{
+                                            padding: 1em 1em;
+                                            border-top: 2px solid lightgray;
+                                            border-right: 2px solid lightgray;
+                                            color: gray; 
+                                        }
+
+
+                                        .features .row1 li p:hover{
+                                            border-top: 2px solid rgb(0, 91, 234);
+                                            border-left: 2px solid rgb(0, 91, 234);
+                                            transition: .35s;
+                                        }
+                                            .features .row2 li p:hover{
+                                                border-top: 2px solid rgb(0, 91, 234);
+                                                border-right: 2px solid rgb(0, 91, 234);
+                                                transition: .35s;
+                                            }
+
+                                            .features .row img{
+                                                width: 100%;
+                                            }
+
+                                                .container{
+                                                    margin: 0 auto;
+                                                    width: 70%;
+                                                    background-color: rgb(247,247,247);
+                                            }

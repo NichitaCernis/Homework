@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(247,247,247);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    height: 2000px;
+
+}
+
+    a{
+        text-decoration: none;
+    }
+    .Buynow{
+        background-color: rgb(38, 38, 38);
+        padding: 1em 1em;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        position:fixed
+    }
+        .Buynow a{
+            color: white;
+        }
+                .Buynow a:first-child{
+                    color: rgb(130, 180, 64);;
+                    margin-left: 1%;
+                    margin-right: 50%;
+                    font-size: 1.6em;
+                }
+                    .Buynow a:last-child{        
+                        background-color: rgb(130, 180, 64);
+                        display: inline-block;
+                        border-radius: 4px;
+                        font-size: 14px;
+                        padding: 5px 20px;
+                        position: absolute;
+                    }
+        .navbar{
+            background-color: rgb(0, 91, 234);
+            padding: 0 15%;
+            width: 100%;
+            top: 3.2em;
+            position:fixed
+        }
+
+            .navbar a{
+                color: white;
+                display: inline-block;
+                padding: 0.7em 1em;
+                vertical-align: middle;
+                font-size: .8em;
+                
+            }
+
+                .navbar a:first-child{
+                    font-size: 1.7em;
+                    margin-right: 20%;
+                    color: white;
+                }
+
+                    .navbar a:last-child{
+                        display: none;
+                    }
+
+                /*Sm Screens*/
+               @media (max-width:1000px) {
+                   .navbar a{
+                       display: none;
+                   }
+                   .navbar a:first-child{
+                       display: inline-block;
+                   }
+                   .navbar a:last-child{
+                    display: inline-block;
+                    margin-left: 20%;
+                    font-size: 1.2em;
+                }
+               }
+                
