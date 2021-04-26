@@ -1,0 +1,223 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color:white;
+    margin: 0;
+}
+    body * {
+        box-sizing: border-box;
+    }
+        h1,h2,h3,p{
+            margin: 0 0 .75em 0;
+        }
+            figure,ul{
+                padding: 0;
+                margin: 0;
+            }
+
+                ul{
+                    list-style: none;
+                }
+                    h1{
+                        color: rgb(67, 67, 67);
+                        font-size: 28px;
+                        margin: 0 0 10px;
+                        font-weight: 700;
+                        line-height: 1;
+                    }
+.features{
+    background-color: rgb(247,247,247);
+    margin: 30em 0;
+    padding: 4em 0;
+}
+
+    .features header{
+        text-align: center;
+        padding: 2em 0;
+    }
+
+        .features header h2{
+            font-size: 1em;
+            font-weight: 400;
+            color: gray;
+        }
+            .features h3{
+                position: relative;
+                padding: 0.1em 1em;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 1.2em;
+                color: #444;
+            }
+
+                .features h3::after{
+                    content: "";
+                    display: block;
+                    background-color: #eee;
+
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    position: absolute;
+
+                    
+                    bottom: -1.9em;
+                }
+                .features li:hover h3::after{
+                    background-color: rgb(0, 91, 234);
+                    transition: 0.3s;
+                    
+                }
+
+
+                    .features ul:first-child h3::after{
+                        right: -2.3em;
+                    }
+                        .features ul:last-child h3::after{
+                            left: -2.3em;
+                        }
+
+                        /*          Border       */
+                        .features ul p{
+                            padding: 1.3em 0 1em 1em;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 23px;
+                            border: 2px solid #eee;
+                            color: #777;
+                            transition: 0.5s;
+                            position: relative;
+                        }
+                        .features ul p::after{
+                            height: 1.5em;
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            right: 0;
+                            position: absolute;
+                            background-color: rgb(247,247,247);
+
+                            
+                        }
+                            .features ul:first-child p{
+                                border-right: rgb(247,247,247) ;
+                            }
+                            .features ul:last-child p{
+                                border-left: rgb(247,247,247);
+                                
+                            }
+                        /*           HOVER         */
+                        .features ul:first-child li:hover p::after{
+                            width: 40%;
+                            transition: 1s;
+                        }
+                        .features ul:last-child li:hover p::after{
+                            width: 40%;
+                            left: 0;
+                            transition: 1s;
+                        }
+
+                            .features ul li:hover p{
+                                border-color: rgb(0, 91, 234);
+                            }
+
+
+
+
+
+                            .features .row{
+                                padding: 2em 0;
+                            }
+
+                                .features .row >*{
+                                    width: 33.33%;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+
+                                    .features .row figure{
+                                        padding: 0 5%;
+                                    }
+
+                                        .features .row ul:first-child{
+                                            padding-right: 0 5% 0 2.5%;
+                                            text-align: right;
+                                        }
+
+                                            .features .row ul:last-child{
+                                                padding:0 2.5% 0 5%;
+
+                                            }
+                                                .features .row ul li{
+                                                    padding: 25px 50px 25px 20px;
+                                                }
+
+
+                                                    .features .row img{
+                                                        width: 100%;
+                                                    }
+
+                                                        .container{
+                                                            margin: 0 auto;
+                                                            width: 70%;
+                                                            background-color: rgb(247,247,247);
+                                                        }
+
+
+@media (max-width: 1500px){
+    .container{
+        width: 84%;
+    }
+
+}
+
+@media (max-width: 1100px){
+    .features .row figure{
+        display: none;
+    }
+        .features .row >ul{
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+}
+/*Mobile*/
+@media (max-width: 900px){
+    
+    .features .row >ul{
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 1.5% !important;
+    }
+
+        .features .row ul:first-child{
+            text-align: left;
+        }
+            .features ul:first-child h3::after{
+                left: -1.9em;
+            }
+
+                .features ul p{
+                    
+                    border: 2px solid #eee;
+                    border-left: transparent;
+                    right: -0.6em;
+                    position: relative;
+                }
+
+                    .features ul li:hover p{
+                        border-right: 2px solid rgb(0, 91, 234);
+                        transition: .3s;
+                    
+                    }
+
+
+                        .features ul p::after{
+                            width: 100%;
+                            left: 0;
+                            position: absolute;
+                        }
+            
+}
