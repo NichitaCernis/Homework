@@ -1,0 +1,26 @@
+body{
+    background-color: #222;
+    padding: 10%;
+
+/*1vw = 1%Viewport*/
+    width: 100vw;  
+    height: 100vw;
+    box-sizing: border-box;
+}
+
+.app header{
+    background-color: brown;
+}
+
+.app .list{
+    background-color: lightcoral;
+}
+
+.app .list li>div{
+    background-color: green;
+    border: 1px solid black;
+}
+
+.app footer{
+    background-color: brown;
+}

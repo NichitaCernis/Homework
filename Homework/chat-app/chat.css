@@ -1,0 +1,56 @@
+:root{
+/*Palette*/
+    /*color: #BF8E97;
+    color: #BFB688;*/
+    --Falcon: #735560;    
+    --BaliHai: #85A0A6;
+    --LinkWater: #C1D4D9;
+    --Dark: #222;
+/*Length*/
+    --spacer: .5rem;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.app{
+    background-color: var(--LinkWater);
+    color: var(--Dark);
+    width: 100%;
+    height: 100%;
+}
+
+.app header{
+    height: 10%;
+    padding: var(--spacer);
+}
+
+.app .list{
+    height: 80%;
+}
+    .app .list li{
+        padding: var(--spacer);
+        display: table;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .app .list li>div{
+        height: calc(var(--spacer)*10);
+        display: table-cell;
+        vertical-align: top;
+        padding: calc(var(--spacer)/2);
+    }
+    .app .list li .avatar,
+    .app .list li .info{
+        width: 20%;
+    }
+    .app .list li .avatar img{
+        width: 100%;
+    }
+.app footer{
+    height: 10%;
+    padding: var(--spacer);
+}
