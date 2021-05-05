@@ -1,0 +1,36 @@
+.container {
+    --size: 1em;
+    --color: green;
+  }
+  
+  .container > div {
+      width: var(--size);
+      height: var(--size);
+      padding: var(--size);
+      margin: calc(var(--size) / 10);
+  
+      background-color: var(--color);
+  }
+  
+  
+  .container > div:first-child,
+  .container > div:last-child {
+      --size: 2em;
+  }
+
+  .container .red
+  /*.container>div:nth-child(4),
+    .container>div:nth-child(5),
+    .container>div:nth-child(6)*/{
+    --color: Red;
+  }
+
+    /*1-й и 9-й элементы отличаются по размеру 
+    If you do for example
+                background-color: Red;
+                background-color: Green;
+    the Green will be prioritized*/
+
+    /*I added a class to the 4,5,6 box because you 
+    its more compact.And if you want box 7 to be red, just add the class .red .
+    If you have 50 classes then the :nth-child(4) is easier.*/
