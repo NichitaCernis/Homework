@@ -7,50 +7,76 @@
     --LinkWater: #C1D4D9;
     --Dark: #222;
 /*Length*/
-    --spacer: .5rem;
+    --spacer: .75rem;
     
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-
+    
 }
 
 .app{
     background-color: var(--LinkWater);
     color: var(--Dark);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .app header{
-    height: 10%;
+    height: 10vh;
     padding: var(--spacer);
 }
 
 .app .list{
-    height: 80%;
+    height: 80vh;
+    overflow: auto;
 }
+
+.app .list ul{
+    height: inherit;
+    overflow: auto;
+    scroll-snap-type: mandatory;
+}
+
     .app .list li{
-        padding: var(--spacer);
         display: table;
         width: 100%;
         box-sizing: border-box;
+        border-bottom: 1px solid lightgray;
+        height: calc(90vh /6);
+        /*margin: calc(-2*var(--spacer));*/
+        scroll-snap-align: start;
     }
+    .app .list li:last-child{
+        border: 0;
+    }
+
     .app .list li>div{
-        height: calc(var(--spacer)*10);
         display: table-cell;
         vertical-align: top;
-        padding: calc(var(--spacer)/2);
+        padding: var(--spacer);
+        
     }
+
     .app .list li .avatar,
     .app .list li .info{
         width: 20%;
     }
+
+    .app .list li .info{
+        text-align: right;
+        color: #4447;
+    }
+
+    .app .list .content p{
+        color: #5557;
+    }
+
     .app .list li .avatar img{
-        width: 100%;
+        width: 90%;
     }
 .app footer{
-    height: 10%;
+    height: 10vh;
     padding: var(--spacer);
 }
