@@ -7,20 +7,27 @@ body{
     height: 100vw;
     box-sizing: border-box;
 }
+.app{
+    background-color: var(--Darkblue);
+}
+.app header,
+.app footer{
+    background-color: var(--Dark)
+}
 
-.app header{
-    background-color: lightblue;
+.app .list li .info{
+    color: var(--LinkWater)
+}
+
+.app .list .content h3{
+    color: var(--BaliHai)
+}
+.app .list .content p{
+    color: var(--Falcon)
 }
 
 .app .list{
-    background-color: black;
+    background-color: var(--Darkblue)
 }
 
-.app .list li>div{
-    background-color: white;
-    
-}
 
-.app footer{
-    background-color: lightblue;
-}

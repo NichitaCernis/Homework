@@ -2,13 +2,14 @@
 /*Palette*/
     /*color: #BF8E97;
     color: #BFB688;*/
-    --Falcon: #735560;    
-    --BaliHai: #85A0A6;
-    --LinkWater: #C1D4D9;
+    --Falcon: #eb6464;    
+    --BaliHai: #3595aa;
+    --LinkWater: #a2bec7;
     --Dark: #222;
+    --Darkblue: rgba(0, 0, 53, 0.13);
 /*Length*/
-    --spacer: .75rem;
-    
+    --spacer: .5rem;
+    --img_k: 13;
 }
 
 body{
@@ -17,7 +18,7 @@ body{
 }
 
 .app{
-    background-color: var(--LinkWater);
+    
     color: var(--Dark);
     width: 100vw;
     height: 100vh;
@@ -66,17 +67,24 @@ body{
 
     .app .list li .info{
         text-align: right;
-        color: #4447;
+        padding-top: 1.9em;
     }
 
-    .app .list .content p{
-        color: #5557;
-    }
 
     .app .list li .avatar img{
-        width: 90%;
+        width: calc(var(--img_k)*var(--spacer));
     }
 .app footer{
     height: 10vh;
     padding: var(--spacer);
+}
+
+
+
+
+@media(orientation: landscape) and (max-height:420px){
+
+    .app header h1{
+        font-size: 1.5rem;
+    }
 }
