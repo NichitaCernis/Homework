@@ -1,23 +1,83 @@
+
 body{
    font-family: "quicksand";
-   padding: var(--spacer);
+  /* padding: var(--spacer);
    margin: var(--spacer);
    background-color: var(--Dark);
-   color: lightgray;
+   color: lightgray;*/
+    --dark: #222;
+    background-color: var(--dark)
 }
+
+
 .container{
     padding: 0 1em;
 }
-#news h1,h2{
-    color: rgba(255, 251, 0, 0.726);
+
+.header-main{
+    padding: .25em 0;
 }
 
-#news
-header h1 ,
-header h2{
-    margin: 0;
+.header-main__title,
+.header-main__subtitle{
+    margin: 0.125em 0;
 }
 
-#news h3{
-    color:rgba(211, 208, 32, 0.671);
+.content-main{
+    
 }
+
+.content-main__news-wrapper{
+    margin-top: 1em;
+    border-top: .1em solid turquoise;
+    position: relative;
+}
+
+.news-wrapper__label{
+    position: absolute;
+    top: calc( -1.3em + 1ex - .85em );
+    padding-right: .5em ;
+    color: #999;
+    background-color: var(--dark);
+}
+
+.content-main__news{
+    padding-bottom: 1em;
+    margin-right: -10em;
+    border-bottom: .1em solid turquoise;
+    color: turquoise;
+}
+
+.content-main__news::after{
+    content: "";
+    
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+
+.content-main__news p{
+    text-align: justify;
+    /*H1: activate Word Break*/
+    word-break: break-all;
+    color: lightgray;
+}
+
+.content-main__news .news__links{
+    text-align: right;
+    }
+
+    /* adaptive MD 768px*/
+
+    @media (min-width: 768px){
+
+        .container{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        body{
+            font-size: 36px;
+        }
+    }

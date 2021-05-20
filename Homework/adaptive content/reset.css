@@ -11,8 +11,6 @@
 :root {
 	-moz-tab-size: 4;
 	tab-size: 4;
-	--spacer: .5rem;
-	font-size: 16px;
 }
 
 /**
@@ -41,9 +39,13 @@ body {
 		Arial,
 		sans-serif,
 		'Apple Color Emoji',
-		'Segoe UI Emoji';
+		'Segoe UI Emoji',
+		"Quicksand";
 }
 
+a{
+	text-decoration: none;
+}
 
 /**
 1. Add the correct height in Firefox.

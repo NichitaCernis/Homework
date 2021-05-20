@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>Adaptive Content</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fonts/quicksand/font.css">
@@ -10,41 +10,51 @@
 </head>
 <body>
 
-    <section id="news">
+    <section id="news" class="container">
 
-        <header>
-            <h1>Fresh news</h1>
-            <h2>We keep you informed</h2>
-            <hr>
+        <header class="header-main">
+            <h1 class="header-main__title">Fresh news</h1>
+            <h2 class="header-main__subtitle">We keep you informed</h2>
         </header> 
         <br> 
         <br>
-            <div>
-                <article>
-                    <h2>Main news title</h2>
-                    <img src="images\businessman-2682712_1280.jpg" alt="Main">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nulla quas exercitationem commodi officia eaque deserunt nostrum accusantium ea modi.</p>
-                    <p>Lorem ipsum  dolor sit amet, consectetur adipisicing elit. Officia, esse iure quaerat quas suscipit mollitia velit sequi quis, distinctio facere recusandae. Vel, sequi. Sint et, quaerat quidem quod minus officiis?</p>
-                    <p>
-                        <span>
-                            2021.05.18
-                        </span>
-                        <a href="">
-                            read more...
-                        </a>
-                    </p>
-                </article>
+            <div class="content-main">
+
+                <div class="content-main__news-wrapper">
+                    <h2 class="news-wrapper__label">Featured</h2>
+
+                    <article class="content-main__news">
+
+                        <h2>Main news title</h2>
+                        <img src="images\businessman-2682712_1280.jpg" alt="Main">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nulla quas exercitationem commodi officia eaque deserunt nostrum accusantium ea modi.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque eius ipsum dolores, tenetur iste soluta nisi ea praesentium? Illo totam ut quibusdam ea dolor asperiores molestiae nobis. Deserunt numquam eum praesentium modi aut sint!</p>
+                        <p class="news__links">
+
+                            <!--H2: Find corosponding element for Date/time-->
+                            <time>
+                                2021.05.18
+                            </time>
+                            <a href="">
+                                read more...
+                            </a>
+                        </p>
+
+                    </article>
+                </div>
+
                 <br>
                 <br>
-                <article>
+                
+                <article class="content-main__news">
                     <h3>Second title</h3>
                     <img src="images\police-2602626_1280.jpg" alt="Second">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nihil provident molestias beatae similique atque, asperiores quo voluptates deleniti a.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat velit magni saepe quia aliquam provident ipsam vel consequatur aspernatur aliquid, amet totam nostrum possimus iste!</p>
-                    <p>
-                        <span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ad! Labore assumenda dignissimos dolore, officia omnis iste cum sapiente delectus ea reiciendis, culpa consequatur alias odit quos sunt nemo incidunt inventore consequuntur quas doloremque. Dolore.</p>
+                    <p class="news__links">
+                        <time>
                             2021.04.14
-                        </span>
+                        </time>
                         <a href="">
                             read more...
                         </a>
@@ -52,15 +62,15 @@
                 </article>
                 <br>
                 <br>
-                <article>
+                <article class="content-main__news">
                     <h3>Third title</h3>
                     <img src="images\press-2333329_1280.jpg" alt="Third">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente consectetur itaque eaque at voluptate voluptas. Omnis cumque eos, repellat tempora sed quibusdam excepturi?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti eius fugiat impedit earum molestiae culpa aut perspiciatis eveniet sapiente veniam, natus exercitationem quos, voluptatum maxime.</p>
-                    <p>
-                        <span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nostrum consequatur facilis asperiores corporis ratione? Tempore, eius quae dolor magni labore quasi repellendus non corrupti iure voluptatem quod incidunt et dolorem iusto ab temporibus pariatur fugiat.</p>
+                    <p class="news__links">
+                        <time>
                             2021.05.15
-                        </span>
+                        </time>
                         <a href="">
                             read more...
                         </a>
@@ -73,7 +83,6 @@
         </footer>
 
     </section>
-    <hr>
 
 </body>
 </html>
