@@ -1,0 +1,23 @@
+body{
+   font-family: "quicksand";
+   padding: var(--spacer);
+   margin: var(--spacer);
+   background-color: var(--Dark);
+   color: lightgray;
+}
+.container{
+    padding: 0 1em;
+}
+#news h1,h2{
+    color: rgba(255, 251, 0, 0.726);
+}
+
+#news
+header h1 ,
+header h2{
+    margin: 0;
+}
+
+#news h3{
+    color:rgba(211, 208, 32, 0.671);
+}
