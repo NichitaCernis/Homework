@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adaptive Content</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fonts/quicksand/font.css">
@@ -18,15 +18,19 @@
         </header> 
         <br> 
         <br>
-            <div class="content-main">
+            <div class="content-main clearfix">
 
                 <div class="content-main__news-wrapper">
                     <h2 class="news-wrapper__label">Featured</h2>
 
-                    <article class="content-main__news">
-
+                    <article class="content-main__news clearfix">
                         <h2>Main news title</h2>
-                        <img src="images\businessman-2682712_1280.jpg" alt="Main">
+                        <picture>
+                            <source srcset="images\businessman-2682712_1280.jpg"
+                                media="(min-width: 768px)"
+                            />
+                            <img class="ml" src="images/businessman-sm2.jpg" alt="Main">
+                        </picture>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nulla quas exercitationem commodi officia eaque deserunt nostrum accusantium ea modi.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque eius ipsum dolores, tenetur iste soluta nisi ea praesentium? Illo totam ut quibusdam ea dolor asperiores molestiae nobis. Deserunt numquam eum praesentium modi aut sint!</p>
                         <p class="news__links">
@@ -39,14 +43,13 @@
                                 read more...
                             </a>
                         </p>
-
                     </article>
                 </div>
 
                 <br>
                 <br>
                 
-                <article class="content-main__news">
+                <article class="content-main__news ml">
                     <h3>Second title</h3>
                     <img src="images\police-2602626_1280.jpg" alt="Second">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nihil provident molestias beatae similique atque, asperiores quo voluptates deleniti a.</p>
