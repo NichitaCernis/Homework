@@ -6,12 +6,9 @@ body {
 
 .container {
   padding: 0 1em;
-}
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+  display: flex;
+  flex-direction: column;
 }
 
 .ml {
@@ -42,13 +39,13 @@ body {
   position: absolute;
   width: 1.5em;
   height: 1.5em;
-  top: -.1  em;
+  top: -0.1 em;
   left: 23em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.x::after{
+.x::after {
   content: "X";
   color: gray;
 }
@@ -57,8 +54,6 @@ body {
   transition: 0.25s;
   cursor: pointer;
 }
-
-
 
 .content-main__news-wrapper {
   margin-top: 1em;
@@ -74,8 +69,10 @@ body {
   background-color: var(--dark);
 }
 
+
 .content-main__news {
   margin-top: 5em;
+  margin-right: 0.5em;
   border-bottom: 0.1em solid turquoise;
   color: turquoise;
 }
@@ -90,7 +87,6 @@ body {
 
   display: block;
   width: 50%;
-  float: right;
 }
 
 .content-main__news p {
@@ -101,14 +97,15 @@ body {
 }
 
 .content-main__news .news__links {
-  text-align: right;
+  margin: auto;
+  margin-right: 0;
 }
 
 .subscribe {
   background-color: turquoise;
   width: 10%;
   padding: 0 10em 0 5em;
-  border: 1px solid lightblue;
+  border: 1px solid white;
 }
 
 /* adaptive SD 768px*/
@@ -118,10 +115,6 @@ body {
     width: 90%;
     margin: 0 auto;
   }
-
-  /* body {
-    font-size: 36px;
-  }*/
 }
 
 /* adaptive MD 992px*/
@@ -134,30 +127,43 @@ body {
     visibility: hidden;
   }
 
-  .ad{
+  .ad {
     margin-left: -1em;
   }
 }
 
 /* adaptive BD 1200px*/
 @media (min-width: 1200px) {
-  .content-main__news-wrapper .content-main__news img {
+  .content-main__news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content-main__news h2 {
+    width: 100%;
+  }
+
+  .content-main__news-wrapper .content-main__news picture {
     width: 66%;
-    float: left;
-    margin-right: 1em;
+  }
+  .content-main__news-wrapper .content-main__news div {
+    width: calc(34% - 1em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .content-main__news-wrapper .content-main__news::after {
-    width: auto;
-    float: none;
-    margin-right: 1em;
+    /*width: auto;*/
   }
 
   .content-main > .content-main__news {
-    float: left;
     width: calc(50% - 0.5em);
+    float: left;
   }
-  .ad{
+  .ad {
     margin-left: 15em;
   }
+
 }

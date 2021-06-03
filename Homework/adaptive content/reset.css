@@ -197,3 +197,7 @@ progress {
 summary {
 	display: list-item;
 }
+
+picture {
+	font-size: 0;
+}
