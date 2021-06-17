@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Flex Mini Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="Main-box">
+
+        <div class="navbar">
+            <a href="#sidebar"><i class="fas fa-align-justify"> NAVBAR</i></a>
+        </div>
+
+        <div class="row">
+
+            <div id="sidebar" class="sidebar">
+                <h3><i class="fas fa-columns"></i> <span class="extender"> SIDEBAR PANEL</span></h3>
+                <a href=""><i class="fas fa-cogs"><span class="extender"> SETTINGS</span></i></a>
+            </div>
+
+            <div class="dashboard">
+                <h3>DASHBOARD</h3>
+                <div class="sections">
+                    <section>
+                        <div class="owl-fix">
+                            <div class="owl-carousel">
+                                <div> <img src="https://www.diagrams.net/assets/svg/home-dia1.svg" alt=""></div>
+                                <div> <img src="https://online.visual-paradigm.com/images/features/sdl-diagram-software/sdl-diagram-software.png" alt=""></div>
+                                <div> <img src="https://cdn-cashy-static-assets.lucidchart.com/marketing/pages/consideration-page/Diagram-Maker/_new_Five-Set-Venn-Diagram-Content-Marketing.jpeg" alt=""></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="carousel">
+                            <div> <img src="" alt=""></div>
+                            <div> <img src="" alt=""></div>
+                            <div> <img src="" alt=""></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+</html>

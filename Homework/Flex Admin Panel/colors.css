@@ -1,0 +1,24 @@
+
+a {
+    color: white;
+}
+
+.Main-box{
+}
+    .navbar {
+        background-color: #234e;
+    }
+        .navbar a {
+            color: rgb(163, 163, 224);
+        }
+    .sidebar {
+        background-color: #234;
+        color: #777 ;
+    }
+        .sidebar a  {
+            color: rgb(172, 172, 172);
+        }
+    .dashboard{
+        background-color: #222;
+        color:gold;
+    }
