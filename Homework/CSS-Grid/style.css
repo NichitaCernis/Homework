@@ -12,7 +12,6 @@ a {
     height: 80%;
     width: 80%;
     position: absolute;
-
 }
 .logo {
     height: 20%;
@@ -42,7 +41,6 @@ a {
     background-color: rgb(241, 241, 241);
 }
 
-
 /*Grid*/
 
 .grid {
@@ -53,7 +51,7 @@ a {
 
     font-size: 10px;
 }
-.Border{
+.Border {
     border: 1px solid lightgray;
     border-radius: 0.5em;
     text-align: center;
@@ -62,7 +60,6 @@ a {
 .grid header {
     grid-column-start: 1;
     grid-column-end: 2;
-
 }
 .grid article:nth-of-type(1) {
     background-color: rgb(241, 241, 241);
@@ -75,7 +72,7 @@ a {
     order: 4;
 }
 
-.Impressum{
+.Impressum {
     border: solid gray 1px;
     height: 12%;
     background-color: lightgray;
@@ -84,15 +81,15 @@ a {
     width: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 
     font-size: 10px;
 }
 
-.Impressum header{
+.Impressum header {
     grid-column-start: 1;
-    grid-column-end: 3; 
+    grid-column-end: 3;
 }
 
 .Impressum article:nth-of-type(1) {
