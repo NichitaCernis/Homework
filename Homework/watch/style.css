@@ -1,0 +1,345 @@
+body {
+  background-color: #223;
+}
+
+.watch {
+  width: 500px;
+  height: 500px;
+  background-color: DarkGoldenRod;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  border-radius: 100%;
+}
+
+.watch .screen {
+  width: 450px;
+  height: 450px;
+  background-color: #7e5c08;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  border-radius: 100%;
+}
+
+.watch .screen .dash {
+  width: 15px;
+  height: 2.5px;
+  background-color: #f4c040;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  margin-right: 15px;
+  -webkit-transform-origin: -82.5px 0;
+          transform-origin: -82.5px 0;
+}
+
+.watch .screen .dash:nth-child(1) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.watch .screen .dash:nth-child(2) {
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+.watch .screen .dash:nth-child(3) {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.watch .screen .dash:nth-child(4) {
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+.watch .screen .dash:nth-child(5) {
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+.watch .screen .dash:nth-child(6) {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.watch .screen .dash:nth-child(7) {
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+}
+
+.watch .screen .dash:nth-child(8) {
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
+.watch .screen .dash:nth-child(9) {
+  -webkit-transform: rotate(48deg);
+          transform: rotate(48deg);
+}
+
+.watch .screen .dash:nth-child(10) {
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+.watch .screen .dash:nth-child(11) {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.watch .screen .dash:nth-child(12) {
+  -webkit-transform: rotate(66deg);
+          transform: rotate(66deg);
+}
+
+.watch .screen .dash:nth-child(13) {
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
+.watch .screen .dash:nth-child(14) {
+  -webkit-transform: rotate(78deg);
+          transform: rotate(78deg);
+}
+
+.watch .screen .dash:nth-child(15) {
+  -webkit-transform: rotate(84deg);
+          transform: rotate(84deg);
+}
+
+.watch .screen .dash:nth-child(16) {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.watch .screen .dash:nth-child(17) {
+  -webkit-transform: rotate(96deg);
+          transform: rotate(96deg);
+}
+
+.watch .screen .dash:nth-child(18) {
+  -webkit-transform: rotate(102deg);
+          transform: rotate(102deg);
+}
+
+.watch .screen .dash:nth-child(19) {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+
+.watch .screen .dash:nth-child(20) {
+  -webkit-transform: rotate(114deg);
+          transform: rotate(114deg);
+}
+
+.watch .screen .dash:nth-child(21) {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.watch .screen .dash:nth-child(22) {
+  -webkit-transform: rotate(126deg);
+          transform: rotate(126deg);
+}
+
+.watch .screen .dash:nth-child(23) {
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
+}
+
+.watch .screen .dash:nth-child(24) {
+  -webkit-transform: rotate(138deg);
+          transform: rotate(138deg);
+}
+
+.watch .screen .dash:nth-child(25) {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+
+.watch .screen .dash:nth-child(26) {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.watch .screen .dash:nth-child(27) {
+  -webkit-transform: rotate(156deg);
+          transform: rotate(156deg);
+}
+
+.watch .screen .dash:nth-child(28) {
+  -webkit-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+
+.watch .screen .dash:nth-child(29) {
+  -webkit-transform: rotate(168deg);
+          transform: rotate(168deg);
+}
+
+.watch .screen .dash:nth-child(30) {
+  -webkit-transform: rotate(174deg);
+          transform: rotate(174deg);
+}
+
+.watch .screen .dash:nth-child(31) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.watch .screen .dash:nth-child(32) {
+  -webkit-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+.watch .screen .dash:nth-child(33) {
+  -webkit-transform: rotate(192deg);
+          transform: rotate(192deg);
+}
+
+.watch .screen .dash:nth-child(34) {
+  -webkit-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.watch .screen .dash:nth-child(35) {
+  -webkit-transform: rotate(204deg);
+          transform: rotate(204deg);
+}
+
+.watch .screen .dash:nth-child(36) {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+.watch .screen .dash:nth-child(37) {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+}
+
+.watch .screen .dash:nth-child(38) {
+  -webkit-transform: rotate(222deg);
+          transform: rotate(222deg);
+}
+
+.watch .screen .dash:nth-child(39) {
+  -webkit-transform: rotate(228deg);
+          transform: rotate(228deg);
+}
+
+.watch .screen .dash:nth-child(40) {
+  -webkit-transform: rotate(234deg);
+          transform: rotate(234deg);
+}
+
+.watch .screen .dash:nth-child(41) {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.watch .screen .dash:nth-child(42) {
+  -webkit-transform: rotate(246deg);
+          transform: rotate(246deg);
+}
+
+.watch .screen .dash:nth-child(43) {
+  -webkit-transform: rotate(252deg);
+          transform: rotate(252deg);
+}
+
+.watch .screen .dash:nth-child(44) {
+  -webkit-transform: rotate(258deg);
+          transform: rotate(258deg);
+}
+
+.watch .screen .dash:nth-child(45) {
+  -webkit-transform: rotate(264deg);
+          transform: rotate(264deg);
+}
+
+.watch .screen .dash:nth-child(46) {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.watch .screen .dash:nth-child(47) {
+  -webkit-transform: rotate(276deg);
+          transform: rotate(276deg);
+}
+
+.watch .screen .dash:nth-child(48) {
+  -webkit-transform: rotate(282deg);
+          transform: rotate(282deg);
+}
+
+.watch .screen .dash:nth-child(49) {
+  -webkit-transform: rotate(288deg);
+          transform: rotate(288deg);
+}
+
+.watch .screen .dash:nth-child(50) {
+  -webkit-transform: rotate(294deg);
+          transform: rotate(294deg);
+}
+
+.watch .screen .dash:nth-child(51) {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.watch .screen .dash:nth-child(52) {
+  -webkit-transform: rotate(306deg);
+          transform: rotate(306deg);
+}
+
+.watch .screen .dash:nth-child(53) {
+  -webkit-transform: rotate(312deg);
+          transform: rotate(312deg);
+}
+
+.watch .screen .dash:nth-child(54) {
+  -webkit-transform: rotate(318deg);
+          transform: rotate(318deg);
+}
+
+.watch .screen .dash:nth-child(55) {
+  -webkit-transform: rotate(324deg);
+          transform: rotate(324deg);
+}
+
+.watch .screen .dash:nth-child(56) {
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.watch .screen .dash:nth-child(57) {
+  -webkit-transform: rotate(336deg);
+          transform: rotate(336deg);
+}
+
+.watch .screen .dash:nth-child(58) {
+  -webkit-transform: rotate(342deg);
+          transform: rotate(342deg);
+}
+
+.watch .screen .dash:nth-child(59) {
+  -webkit-transform: rotate(348deg);
+          transform: rotate(348deg);
+}
+
+.watch .screen .dash:nth-child(60) {
+  -webkit-transform: rotate(354deg);
+          transform: rotate(354deg);
+}
+/*# sourceMappingURL=style.css.map */
