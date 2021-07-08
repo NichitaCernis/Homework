@@ -14,7 +14,7 @@ $dashH: 0.005 * $main-size;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: 0;
+    margin: auto;
 }
 
 @mixin round {
@@ -46,9 +46,9 @@ body {
         .dash {
             @include box($dashW,$dashH,lighten($main-material-color, 22%));
             @include center;
-            margin-right: $dashW;
+            margin-right: 1em;
 
-            transform-origin: -$inner-radius / 2 + 2 *
+            transform-origin: -$inner-radius / 1 + 2 *
                 $dashW 0;
 
             @for $n from 1 through 60 {

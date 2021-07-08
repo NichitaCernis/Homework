@@ -11,7 +11,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 0;
+  margin: auto;
   border-radius: 100%;
 }
 
@@ -24,7 +24,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 0;
+  margin: auto;
   border-radius: 100%;
 }
 
@@ -37,10 +37,10 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 0;
-  margin-right: 15px;
-  -webkit-transform-origin: -82.5px 0;
-          transform-origin: -82.5px 0;
+  margin: auto;
+  margin-right: 1em;
+  -webkit-transform-origin: -195px 0;
+          transform-origin: -195px 0;
 }
 
 .watch .screen .dash:nth-child(1) {
