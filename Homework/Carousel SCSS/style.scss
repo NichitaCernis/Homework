@@ -1,0 +1,65 @@
+$darkcolor: #222;
+$cols: 72;
+$rows: 48;
+$size: 16px;
+@mixin center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+body {
+    background-color: $darkcolor;
+    color: lawngreen;
+}
+
+#carousel {
+    width: $cols * $size;
+    height: $rows * $size;
+    border: $size * 0.05 solid lighten($darkcolor, 10%);
+
+    @include center;
+
+    .slide {
+        display: grid;
+        grid-template-columns: repeat($cols, $size);
+        grid-template-rows: repeat($rows, $size);
+
+        width: inherit;
+        height: inherit;
+       /* text-align: center;
+        vertical-align: middle;*/
+
+        $offX: 0;
+        $offY: 0;
+
+        @for $n from 1 to & $cols * $rows {
+
+            
+            &>div:nth-child(#($n)){
+                background-image: url(CSS\SCSS\Carousel SCSS\images\1.jpg);
+                background-position-x: $offX * - $size;
+                background-position-y: $offY * - $size;
+
+                animation: fadeOut 5s;
+                animation-delay: 1s * $offX / $rows;
+                animation-fill-mode: forwards ;
+            }
+
+        $offX: $offX + 1;
+        @if $offX % $cols == 0 {
+            $offX: 0;
+            $offY: $offY -1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from { opacity: 1;}
+        to { opacity: 0;}
+    }
+
+    
+

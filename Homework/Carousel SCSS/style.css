@@ -1,0 +1,36 @@
+body {
+  background-color: #222;
+  color: lawngreen;
+}
+
+#carousel {
+  width: 1200px;
+  height: 800px;
+  border: 5px solid #3c3c3c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#carousel .slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[12];
+      grid-template-columns: repeat(12, 100px);
+  -ms-grid-rows: (100px)[8];
+      grid-template-rows: repeat(8, 100px);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#carousel .slide div {
+  position: relative;
+  top: 50%;
+  border: 1px solid green;
+}
+/*# sourceMappingURL=style.css.map */
