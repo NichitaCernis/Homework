@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Bootstrap 5</title>
+    
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="justify-content: space-between;">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Brand</a>
+
+                <button class="navbar-toggler collapsed" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#main-navigation"
+                    aria-expanded="false">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse justify-content-between w-lg-75" id="main-navigation">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href=""></a> Tutorial</li>
+                        <li class="nav-item"><a class="nav-link" href=""></a> Example</li>
+                        <li class="nav-item"><a class="nav-link" href=""></a> Contacts</li>
+                    </ul>
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+
+                                <i class="bi bi-person-lines-fill"></i>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="" class="nav-link"
+                                data-bs-toggle="modal"
+                                data-bs-target="#cart-modal">
+
+                                <i class="bi bi-bag-plus-fill"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="cart-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Shopping Basket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="list-group-item fs-4"><img src="https://m.media-amazon.com/images/I/81Gf+K3ZPCL._AC_AA180_.jpg" alt=""> Motorcycle Gloves 
+                            <br><p class="border rounded fs-6 d-inline ms-4">Qty: 1</p><p class="fs-6 fw-bold ms-5 d-inline">26.99$</p>
+                        </li>
+
+                        <li class="list-group-item fs-4 border-top"><img src="https://m.media-amazon.com/images/I/71GqZ3okiuL._AC_AA180_.jpg" alt=""> Mouse Mat 800 x 300 
+                            <br><p class="border rounded fs-6 d-inline ms-4">Qty: 1</p><p class="fs-6 fw-bold ms-5 d-inline">17.99$</p>
+                        </li>
+
+                        <li class="list-group-item fs-4 border-top"><img src="https://m.media-amazon.com/images/I/71FpwvPRtbL._AC_AA180_.jpg" alt=""> Men's Ring Dragon
+                           <br> <p class="border rounded fs-6 d-inline ms-4">Qty: 2</p><p class="fs-6 fw-bold ms-5 d-inline">1.55$</p>
+                        </li>
+                    </ul>
+                    <table class="table table-dark table-bordered border-info">
+                        <thead>
+                            <tr> <p class="fs-4 fw-bold">Recommended</p>
+                                <th scope="col"><img src="https://m.media-amazon.com/images/I/614ERwnRHXL._AC_AA220_.jpg" alt=""><p class="ms-4">20.99$</p></th>
+                                <th scope="col"><img src="https://m.media-amazon.com/images/I/71QfHuifTNS._AC_AA220_.jpg" alt=""><p class="ms-4">27.90$</p></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Remove Items</button>
+                    <button type="button" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    background-color: #333;
+}
+
+.nav-item{
+    color: #999;
+    margin: 0 2em 0 2em;
+}
+
+@media (min-width:991px){
+    .w-lg-75{
+        width: 75%;
+    }
+}
