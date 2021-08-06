@@ -5,9 +5,16 @@
     <title>Flex Mini Admin Panel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="colors.css">
+<!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+<!--owl carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--owl theme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -29,7 +36,7 @@
                 <div class="sections">
                     <section>
                         <div class="owl-fix">
-                            <div class="owl-carousel">
+                            <div class="carousel">
                                 <div> <img src="https://www.diagrams.net/assets/svg/home-dia1.svg" alt=""></div>
                                 <div> <img src="https://online.visual-paradigm.com/images/features/sdl-diagram-software/sdl-diagram-software.png" alt=""></div>
                                 <div> <img src="https://cdn-cashy-static-assets.lucidchart.com/marketing/pages/consideration-page/Diagram-Maker/_new_Five-Set-Venn-Diagram-Content-Marketing.jpeg" alt=""></div>
@@ -49,36 +56,32 @@
 
         </div>
     </div>
-
+<!--owl carousel JS-->
     <script 
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
 
+<!--Jquery JS-->
     <script 
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-
+    
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
             responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
+                        0: {
+                            items: 1
+                        },
+                    }
                 }
-            }
-        })
+            );
     </script>
 </body>
 </html>

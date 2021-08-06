@@ -35,7 +35,7 @@ a {
     }
 
         .sidebar {
-            padding: var(--spacer);
+            padding: calc(var(--spacer)*2);
             flex-shrink: 3;
         }
 
@@ -49,41 +49,59 @@ a {
             .dashboard .sections {
                 display: flex;
                 flex-grow: 50;
+                margin: calc(var(--spacer)*2.5);
             }
 
             .dashboard .sections section {
                 border: 1px dashed white;
                 padding: var(--spacer);
+
+                overflow: hidden;
+            }
+
+
+
+            .dashboard .sections section:first-child{
+                width: 60%;
+            }
+
+            .dashboard .sections section:first-child div {
+                height: 100%;
             }
 
             .dashboard .sections section:first-child{
                 margin-right: 1em;
             }
 
-            .owl-fix{
+            /*.owl-fix{
                 position: absolute;
-                width: 400px;
+                width: 100%;
                 display: block;
             }
 
             .owl-fix .slick-slide{
                 width: 100% !important;
-            }
+            }*/
 
-            .dashboard .carousel{
-                width: 100%;
+            .dashboard .owl-carousel{
+                overflow: hidden;
             }
 
             
-            .dashboard .carousel img {
-                width: 100%;
+            .dashboard .owl-carousel img {
+                height: 100%;
+                object-fit: contain;
             }
 
+            .dashboard .owl-carousel .owl-drag .owl-item{
+                /*width: 100% !important;*/
+            }
 
 /* DYNAMIC */
 
 #sidebar .extender {
     display: none;
+
 }
 
 #sidebar:target .extender {
